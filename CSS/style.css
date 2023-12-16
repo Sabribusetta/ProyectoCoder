@@ -87,7 +87,11 @@ h3 {
     text-align: center;
 }
 
-/* Listas*/
+form {
+    text-align: center;
+}
+
+/* Flex */
 
 nav {
     display: flex;
@@ -134,9 +138,6 @@ ul li a {
     list-style-type: none;
     display: flex;
     margin: 0 10px;
-}
-form {
-    text-align: center;
 }
 
 footer ul {
