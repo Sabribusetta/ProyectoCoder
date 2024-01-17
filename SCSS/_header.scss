@@ -1,0 +1,67 @@
+header 
+    .headerLeft {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+/* Etiquetas */
+header {
+    background-color: #E7B9E0;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+
+header {
+    nav {
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0 20px;
+            justify-content: end;
+            }
+        }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between
+
+}
+
+@media  screen and (max-width: 780px) {
+    header {
+        .headerLeft {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        }
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media  screen and (max-width: 480px) {
+    header {
+        nav {
+            ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0 20px;
+            flex-direction: column;
+            }
+        }
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

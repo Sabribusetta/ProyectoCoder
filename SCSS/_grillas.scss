@@ -1,0 +1,26 @@
+.proyecto {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-areas: 
+        "titulo    titulo"
+        "subtitulo img"
+     ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; 
+    }
+
+@media  screen and (max-width: 780px) { 
+    .proyecto {
+        width: 100%;
+        display: grid;
+        align-items: center;
+        grid-template-areas: 
+        "titulo"
+        "img"
+        "subtitulo"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }    
+}   
