@@ -1,21 +1,16 @@
-header 
-    .headerLeft {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-
-}
-
-/* Etiquetas */
 header {
     background-color: #E7B9E0;
     width: 100%;
     top: 0;
     position: fixed;
-}
 
-header {
+    .headerLeft {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+    }
+
     nav {
         ul {
             display: flex;
@@ -26,12 +21,6 @@ header {
         }
 }
 
-nav {
-    display: flex;
-    justify-content: space-between
-
-}
-
 @media  screen and (max-width: 780px) {
     header {
         .headerLeft {
@@ -40,11 +29,6 @@ nav {
         align-items: center;
         padding: 0 20px;
         }
-    }
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 }
 
@@ -58,10 +42,5 @@ nav {
             flex-direction: column;
             }
         }
-    }
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
     }
 }

@@ -1,4 +1,4 @@
-section
+section {
     .articleLeft {
     width: 50%;
     display: flex;
@@ -6,14 +6,14 @@ section
     align-items: center;
     justify-content: center;
     padding: 50px 20px 0;
-}
+    }
 
-section 
     .articleDerecha {
-    display: flex;
-    list-style-type: none;
-    padding:  50px 20px 0;
-    justify-content: end;
+        display: flex;
+        list-style-type: none;
+        padding:  50px 20px 0;
+        justify-content: end;
+    }   
 }
 
 main {
