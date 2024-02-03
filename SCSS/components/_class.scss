@@ -8,21 +8,18 @@
 }
 
 .parrafoGris {
-    display: flex;
-    justify-content: center;
+    @include flex (flex, center, column);
     color: $color-parrafos;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    flex-direction: column;
 }
 .vermasCeleste {
     color: $color-titulos;
     text-align:center;
 }   
 .tituloPrincipal {
-    display: flex;
-    justify-content: center;
+    @include flex;
     padding: 0;
     text-align: center;
     color: $color-titulos;
@@ -52,36 +49,21 @@
 }
 
 .centrar { 
-    display: flex;
-    justify-content: center;
+    @include flex (flex, center, column, nowrap, center );
     align-items: center;
     text-align: center;
-    flex-direction: column;
-}
-
-.portada {
-    padding: 51px 20px;
-    height: 150vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 .principal {
-    display: flex;
-    justify-content: space-between
+    @include flex (flex, space-between);
 }
 
 @media  screen and (max-width: 780px) {
     .principal {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex (flex, center, column, nowrap, center);
     }
     .tituloPrincipal {
-        display: flex;
-        justify-content: center;
+        @include flex;
         padding: 10%;
         text-align: center;
         color: $color-titulos;
@@ -90,8 +72,7 @@
 
 @media  screen and (max-width: 480px) {
     .tituloPrincipal {
-        display: flex;
-        justify-content: center;
+        @include flex;
         padding: 20% 0 0;
         text-align: center;
         color: $color-titulos;
