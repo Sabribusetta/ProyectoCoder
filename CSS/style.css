@@ -63,10 +63,6 @@ section .articleDerecha {
   padding: 50px 20px 0;
 }
 
-main section h2 {
-  color: #2B5D98;
-}
-
 @media screen and (max-width: 780px) {
   section .articleLeft {
     display: flex;
@@ -107,11 +103,17 @@ main section h2 {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   text-align: center;
+  text-decoration: none;
 }
 
 .vermasCeleste {
   color: #2B5D98;
-  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .tituloPrincipal {
@@ -157,7 +159,6 @@ main section h2 {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  align-items: center;
   text-align: center;
 }
 
@@ -167,6 +168,39 @@ main section h2 {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: stretch;
+}
+
+.boton {
+  background-color: #E7B9E0;
+  color: #2B5D98;
+  text-decoration: none;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0px rgba(43, 93, 152, 0.2);
+  width: 150px;
+  height: 30px;
+}
+
+.boton1 {
+  background-color: #E7B9E0;
+  color: #2B5D98;
+  text-decoration: none;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0px rgba(43, 93, 152, 0.2);
+  width: 150px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.centrar-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 780px) {
@@ -219,6 +253,10 @@ header nav ul {
   padding: 0 20px;
   justify-content: end;
 }
+header nav li a {
+  color: #2B5D98;
+  text-decoration: none;
+}
 
 @media screen and (max-width: 780px) {
   header .headerLeft {
@@ -240,6 +278,10 @@ footer ul {
   display: flex;
   list-style-type: none;
 }
+footer li a {
+  color: #2B5D98;
+  text-decoration: none;
+}
 
 .proyecto {
   width: 100%;
@@ -260,6 +302,23 @@ footer ul {
     grid-template-rows: auto;
   }
 }
+main {
+  padding: 50px;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .centrar-imagen {
+  display: block;
+  margin: 0 auto;
+}
+main h2 {
+  color: #2B5D98;
+}
+
 nav {
   display: flex;
   justify-content: space-between;

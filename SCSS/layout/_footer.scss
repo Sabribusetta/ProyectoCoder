@@ -3,4 +3,9 @@ footer{
         display: flex;
         list-style-type: none;
         }
+        li 
+            a{
+              color: $color-titulos;
+              text-decoration: none;
+            }
 } 
